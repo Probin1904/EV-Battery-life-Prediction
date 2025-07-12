@@ -8,28 +8,28 @@
 
     <form action="/predict" method="post">
         <label>Battery Temp (°C):</label>
-        <input type="number" name="battery_temp" required><br><br>
+        <input type="text" name="battery_temp" required><br><br>
 
         <label>Charging Duration (min):</label>
-        <input type="number" name="charging_duration" required><br><br>
+        <input type="text" name="charging_duration" required><br><br>
 
         <label>Degradation Rate (%):</label>
-        <input type="number" name="degradation_rate" required><br><br>
+        <input type="text" name="degradation_rate" required><br><br>
 
         <label>Charging Mode (Numeric):</label>
-        <input type="number" name="charging_mode" required><br><br>
+        <input type="text" name="charging_mode" required><br><br>
 
         <label>Efficiency (%):</label>
-        <input type="number" name="efficiency" required><br><br>
+        <input type="text" name="efficiency" required><br><br>
 
         <label>Battery Type (Numeric):</label>
-        <input type="number" name="battery_type" required><br><br>
+        <input type="text" name="battery_type" required><br><br>
 
         <label>Charging Cycles:</label>
-        <input type="number" name="charging_cycles" required><br><br>
+        <input type="text" name="charging_cycles" required><br><br>
 
         <label>EV Model (Numeric):</label>
-        <input type="number" name="ev_model" required><br><br>
+        <input type="text" name="ev_model" required><br><br>
 
         <input type="submit" value="Predict Battery Life">
     </form>
