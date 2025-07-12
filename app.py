@@ -5,7 +5,7 @@ import joblib
 app = Flask(__name__)
 
 # Load trained model (expects 8 numeric features)
-model = joblib.load('battery_model.joblib')
+model = joblib.load('ev_battery_life_model1.joblib')
 
 @app.route('/')
 def home():
