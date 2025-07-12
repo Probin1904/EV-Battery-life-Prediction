@@ -11,7 +11,7 @@ model = joblib.load('ev_battery_life_model1.joblib')
 def home():
     return render_template('index.html')
 
-@app.route('/predict', methods=['POST'])
+@app.route('/predict', methods=["POST"])
 def predict():
     try:
         # Directly read all numeric input values from the form
