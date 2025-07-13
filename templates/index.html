@@ -1,39 +1,111 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <title>Battery Life Predictor</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px;
+        }
+
+        h1 {
+            margin-bottom: 30px;
+            color: #00e3aa;
+        }
+
+        form {
+            background-color: #ffffff10;
+            padding: 30px 40px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+            width: 100%;
+            max-width: 500px;
+        }
+
+        label {
+            display: block;
+            margin: 15px 0 5px;
+            font-weight: bold;
+            color: #ffffff;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            border-radius: 8px;
+            border: none;
+            outline: none;
+            background-color: #ffffff;
+            color: #000000;
+            font-size: 14px;
+        }
+
+        input[type="submit"] {
+            margin-top: 25px;
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 10px;
+            background-color: #00e3aa;
+            color: #000000;
+            font-weight: bold;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #00b38f;
+        }
+
+        h3 {
+            margin-top: 30px;
+            background-color: #ffffff10;
+            padding: 15px 20px;
+            border-radius: 10px;
+            font-size: 20px;
+            color: #00e3aa;
+        }
+    </style>
 </head>
 <body>
-    <h1>Battery Life Prediction (Hours)</h1>
+    <h1>EV Battery Life Prediction</h1>
 
     <form action="/predict" method="post">
         <label>Battery Temp (°C):</label>
-        <input type="text" name="battery_temp" required><br><br>
+        <input type="text" name="battery_temp" required>
 
         <label>Charging Duration (min):</label>
-        <input type="text" name="charging_duration" required><br><br>
+        <input type="text" name="charging_duration" required>
 
         <label>Degradation Rate (%):</label>
-        <input type="text" name="degradation_rate" required><br><br>
+        <input type="text" name="degradation_rate" required>
 
         <label>Charging Mode (Numeric):</label>
-        <input type="text" name="charging_mode" required><br><br>
+        <input type="text" name="charging_mode" required>
 
         <label>Efficiency (%):</label>
-        <input type="text" name="efficiency" required><br><br>
+        <input type="text" name="efficiency" required>
 
         <label>Battery Type (Numeric):</label>
-        <input type="text" name="battery_type" required><br><br>
+        <input type="text" name="battery_type" required>
 
         <label>Charging Cycles:</label>
-        <input type="text" name="charging_cycles" required><br><br>
+        <input type="text" name="charging_cycles" required>
 
         <label>EV Model (Numeric):</label>
-        <input type="text" name="ev_model" required><br><br>
+        <input type="text" name="ev_model" required>
 
-        <input type="submit" value="Predict Battery Life">
+        <input type="submit" value="🚗 Predict Battery Life">
     </form>
 
     <h3>{{ prediction_text }}</h3>
 </body>
 </html>
+
