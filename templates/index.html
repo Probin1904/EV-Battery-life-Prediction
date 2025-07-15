@@ -7,13 +7,11 @@
         body {
             background-image: url("{{ url_for('static', filename='images/prob.jpg') }}");
             font-family: 'Segoe UI', sans-serif;
-            /* background: linear-gradient(to right, #0f2027, #203a43, #2c5364); */
-            background-image: url(prob.jpg);
             background-repeat: no-repeat;
             background-attachment: fixed;
             background-position: center;
             height: 100%;
-            background-size:contain;
+            background-size: cover;
             color: #ffffff;
             display: flex;
             flex-direction: column;
@@ -77,7 +75,7 @@
 <body>
     <h1>EV Battery Life Prediction</h1>
 
-    <form action="/predict" method="post">
+    <form method="POST">
         <label>Battery Temp (°C):</label>
         <input type="text" name="battery_temp" required>
 
