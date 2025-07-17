@@ -1,14 +1,19 @@
-# 🔋 EV Pulse — Predict Smarter. Drive Farther.
+# 🔋 EV Pulse NXT — Predict Smarter. Drive Farther.
 
 > An AI-powered EV battery life prediction system using Machine Learning, Flask, and HTML+CSS — deployed on Hugging Face Spaces.
+
 ![istockphoto-2163729535-612x612](https://github.com/user-attachments/assets/acfb22e8-cb6a-41f9-9cab-d9d82dfd7718)
 
 
 ---
 
+
 ## 🚀 Overview
 
-**EV Pulse** is your electric vehicle’s predictive companion. It forecasts Remaining Useful Life (RUL), detects early degradation, and helps users optimize their charging behavior. With a lightweight Flask backend and a user-friendly Streamlit dashboard, EV Pulse brings practical battery analytics to the everyday EV user.
+**EV Pulse NXT** is an AI-powered battery analytics system designed to extend the life and performance of electric vehicle (EV) batteries. Built with a Flask backend and a user-friendly Streamlit interface, EV Pulse leverages machine learning to predict Remaining Useful Life (RUL), detect early signs of battery degradation, and classify charging behaviors for optimal performance.
+
+With the rise of EV adoption and the need for smarter energy usage, EV Pulse NXT provides users, researchers, and fleet operators with actionable insights from real-world battery data. Whether you're concerned about overcharging, unexpected wear, or simply optimizing energy consumption, EV Pulse empowers you with intelligent forecasting and decision support.
+
 
 ---
 
@@ -45,6 +50,7 @@
 - Hosted on Hugging Face Spaces
 
 ---
+
 
 ## 🧩 Tech Stack
 
@@ -114,6 +120,5 @@ EV Pulse was inspired by the growing need for intelligent battery management sys
 
 ---
 
-## 📁 Folder Structure
 
 
