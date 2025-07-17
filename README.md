@@ -116,7 +116,7 @@ With the rise of EV adoption and the need for smarter energy usage, EV Pulse NXT
 
 > “Battery is the heart of your EV. Our mission: make it last longer using AI.”
 
-EV Pulse was inspired by the growing need for intelligent battery management systems in the Indian EV market. It combines cognitive models, real data, and intuitive design to empower every EV owner.
+EV Pulse NXT was inspired by the growing need for intelligent battery management systems in the Indian EV market. It combines cognitive models, real data, and intuitive design to empower every EV owner.
 
 ---
 
