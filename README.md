@@ -3,7 +3,7 @@
 🧠 An AI-powered battery analytics tool that predicts EV battery life, detects early degradation, and recommends smart charging behavior using machine learning and Flask.
 
 
-
+---
 
 🚀 Overview
 
@@ -12,7 +12,7 @@ EV Pulse is your electric vehicle’s predictive assistant — built with Flask 
 Whether you’re an EV driver, fleet manager, or energy researcher, EV Pulse helps you understand, preserve, and optimize your battery.
 
 
-
+---
 
 🧠 Key Features
 
@@ -89,22 +89,29 @@ Visualization	Matplotlib, Seaborn, Plotly
 
 ---
 
-⚙ ML Pipeline
+⚙️ ML Pipeline
 
 🔢 Input Features:
 
- Current
-EV Model
-Battery Type
-Battery temperature
-Charging Duration
-Charging Mode
+EV Model 
+
+Battery Type 
+
+Battery temperature 
+
+Charging Duration 
+
+Charging Mode 
+
 Charging Cycles 
-Degradation Rate
+
+Degradation Rate 
+
 Efficiency (%)
 
+---
 
-🛠 Pipeline Steps:
+🛠️ Pipeline Steps:
 
 Data preprocessing (cleaning, encoding, scaling)
 
@@ -119,7 +126,7 @@ Model evaluation & export
 
 🔍 Output:
 
-Remaining battery life (in hours)
+Remaining battery life (in cycles)
 
 Optimal charging category
 
@@ -131,8 +138,9 @@ Visual insights via dashboard
 
 🧪 Demo & Screenshots
 
+> 📌 Add screenshots or Loom demo of your Streamlit app here
+Example: Predicted vs Actual RUL line plot, Box plot by charging type, Charging classifier result
 
-![android2](https://github.com/user-attachments/assets/a58ece2a-f486-4347-9840-a15197980896)
 
 
 
@@ -142,7 +150,7 @@ Visual insights via dashboard
 
 ✅ Model training and evaluation
 
-✅ HTML+CSSS (web interface)
+✅ HTML+CSS (web interface)
 
 ✅ Flask backend with prediction API
 
@@ -168,3 +176,4 @@ Inspired by the growing demand for EV maintenance tools, EV Pulse was built to e
 ---
 
 Let me know if you'd like a PDF, presentation slide, or website version of this — or if you want help creating demo screenshots or QR for deployment.
+
