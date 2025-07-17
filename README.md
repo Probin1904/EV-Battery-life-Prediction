@@ -1,118 +1,119 @@
-#🔋 EV Pulse — Predict Smarter. Drive Farther.
+# 🔋 EV Pulse — Predict Smarter. Drive Farther.
 
-🧠 An AI-powered battery analytics tool that predicts EV battery life, detects early degradation, and recommends smart charging behavior using machine learning and Flask.
-![istockphoto-2163729535-612x612](https://github.com/user-attachments/assets/e2312ff9-e208-4bbd-b954-a6d94644d8a7)
-
-
-🚀 Overview
-EV Pulse is your electric vehicle’s predictive assistant — built with Flask for a lightweight backend and deployed via Hugging Face Spaces for seamless access. It empowers EV users to monitor battery health, forecast remaining useful life (RUL), and make informed decisions about charging, using real EV telemetry data and machine learning insights.
-
-Whether you’re an EV driver, fleet manager, or energy researcher, EV Pulse helps you understand, preserve, and optimize your battery.
-
-🧠 Key Features
-1️⃣ Battery Life Prediction Engine
-🔍 Uses a trained Random Forest Regressor
-📊 Predicts Remaining Useful Life (RUL) in cycles or hours
-🧾 Input features include:
-
-State of Charge (SOC %), Voltage, Current
-
-Battery & Ambient Temperature
-
-Charging Duration, Efficiency
-
-Battery Type, EV Model, Charging Mode, Degradation Rate
-
-2️⃣ Charging Duration Classifier
-⚡ Classifies a charging session as:
-
-Undercharged
-
-Balanced (Optimal)
-
-Overcharged
-🧠 Helps users adopt healthy charging habits for battery longevity
-
-3️⃣ Battery Degradation Analysis
-📉 Detects early degradation based on charging cycles & performance metrics
-🔔 Warns if battery health trends indicate unusual wear
-
-4️⃣ Web Dashboard + API Access
-🌐 Web interface built with Streamlit
-🔌 Backend powered by Flask
-🚀 Hosted on Hugging Face Spaces
-📈 Offers:
-
-Interactive plots (RUL predictions, heatmaps, boxplots)
-
-Real-time inference
-
-Upload CSV and get instant results
-
-🧩 Tech Stack
-Layer	Technology Used
-Frontend	HTML+CSS (Web UI)
-Backend	Flask (REST API)
-Machine Learning	Scikit-learn (Random Forest, Classifier)
-Deployment	Hugging Face Spaces, GitHub
-Data Handling	Pandas, NumPy, CSV
-Visualization	Matplotlib, Seaborn, Plotly
-
-⚙️ ML Pipeline
-🔢 Input Features:
-EV Model 
-
-Battery Type 
-
-Battery temperature 
-
-Charging Duration 
-
-Charging Mode 
-
-Charging Cycles 
-
-Degradation Rate 
-
-Efficiency (%)
-
-🛠️ Pipeline Steps:
-Data preprocessing (cleaning, encoding, scaling)
-
-Train/test split
-
-Model training using Random Forest Regressor
-
-Classification model for charging behavior
-
-Model evaluation & export
-
-🔍 Output:
-Remaining battery life (in cycles)
-
-Optimal charging category
-
-Visual insights via dashboard
-
-🧪 Demo & Screenshots
-![android2](https://github.com/user-attachments/assets/e11339b9-c736-4a36-9ea7-8d6cbd6153f7)
+> An AI-powered EV battery life prediction system using Machine Learning, Flask, and HTML+CSS — deployed on Hugging Face Spaces.
+![istockphoto-2163729535-612x612](https://github.com/user-attachments/assets/acfb22e8-cb6a-41f9-9cab-d9d82dfd7718)
 
 
+---
 
-📈 Roadmap
-✅ Model training and evaluation
+## 🚀 Overview
 
-✅ HTML+CSS (web interface)
+**EV Pulse** is your electric vehicle’s predictive companion. It forecasts Remaining Useful Life (RUL), detects early degradation, and helps users optimize their charging behavior. With a lightweight Flask backend and a user-friendly Streamlit dashboard, EV Pulse brings practical battery analytics to the everyday EV user.
 
-✅ Flask backend with prediction API
+---
 
-✅ Deployment on Hugging Face Spaces
+## 🧠 Key Features
 
-🔜 Add live battery data integration (via mobile or IoT)
+### 🔹 1. Battery Life Prediction Engine
+- Predicts **Remaining Useful Life (RUL)** using Random Forest Regressor
+- Analyzes real-world battery parameters:
+  - EV Model
+  - Battery Type
+  - Battery temperature
+  - Charging Duration
+  - Charging Mode
+  - Charging Cycles
+  - Degradation Rate
+  - Efficiency (%)
 
-🔜 Export model as mobile-ready API
+### 🔹 2. Smart Charging Classifier
+- Categorizes charging sessions:
+  - ✅ Balanced (Optimal)
+  - ⚠️ Undercharged
+  - ❌ Overcharged
 
-🧠 Inspiration
-“Battery is the heart of your EV. Our mission: make it last longer with AI.”
+### 🔹 3. Degradation Analysis
+- Detects signs of early battery wear
+- Visualizes trends in degradation over time
 
-Inspired by the growing demand for EV maintenance tools, EV Pulse was built to empower users with foresight — not just analytics. Combining practical engineering, real user data, and ML models, it brings transparency to battery life management
+### 🔹 4. Streamlit Dashboard + Flask API
+- Upload CSV → Get predictions instantly
+- Visualizations include:
+  - Line plot: Actual vs Predicted RUL
+  - Heatmaps, Histograms, Box Plots
+- REST API powered by Flask
+- Hosted on Hugging Face Spaces
+
+---
+
+## 🧩 Tech Stack
+
+| Layer            | Technology Used                            |
+|------------------|---------------------------------------------|
+| Frontend         | HTML+CSS (Web UI)                          |
+| Backend          | Flask (REST API)                            |
+| ML / AI          | Scikit-learn (Random Forest)                |
+| Deployment       | Hugging Face Spaces                         |
+| Visualization    | Matplotlib, Seaborn, Plotly                 |
+| Data Handling    | Pandas, NumPy                               |
+
+---
+
+## ⚙️ ML Pipeline
+
+**🔢 Input Features:**
+- EV Model
+- Battery Type
+- Battery temperature
+- Charging Duration
+- Charging Mode
+- Charging Cycles
+- Degradation Rate
+- Efficiency (%)
+
+**🛠️ Workflow:**
+1. Data Preprocessing (cleaning, encoding, scaling)
+2. Model Training: Random Forest Regressor
+3. Evaluation & Metrics
+4. Classification: Optimal Charging Class
+5. Flask API & Streamlit Dashboard Integration
+
+---
+
+## 🖼️ Screenshots
+
+<img width="1280" height="2856" alt="Screenshot_20250715_154014" src="https://github.com/user-attachments/assets/faea2c41-a5c2-4530-b067-d8be05c9fbfa" />
+
+
+---
+
+## 📈 Results
+
+- R² Score: ~0.92+ on test data
+- Balanced accuracy for charging classifier: ~90%
+- Real-time feedback on battery health and life
+
+---
+
+## 📅 Roadmap
+
+- [x] RUL Prediction Model (Random Forest)
+- [x] Charging Duration Classifier
+- [x] Streamlit UI & Flask Integration
+- [x] Hugging Face Deployment
+- [ ] Live sensor/IoT data integration
+- [ ] Export API for mobile app integration
+
+---
+
+## 🙌 Inspiration
+
+> “Battery is the heart of your EV. Our mission: make it last longer using AI.”
+
+EV Pulse was inspired by the growing need for intelligent battery management systems in the Indian EV market. It combines cognitive models, real data, and intuitive design to empower every EV owner.
+
+---
+
+## 📁 Folder Structure
+
+
