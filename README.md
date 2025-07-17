@@ -1,4 +1,4 @@
-🔋 EV Pulse — Predict Smarter. Drive Farther.
+#🔋 EV Pulse — Predict Smarter. Drive Farther.
 
 🧠 An AI-powered battery analytics tool that predicts EV battery life, detects early degradation, and recommends smart charging behavior using machine learning and Flask.
 ![istockphoto-2163729535-612x612](https://github.com/user-attachments/assets/e2312ff9-e208-4bbd-b954-a6d94644d8a7)
